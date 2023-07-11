@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minha IA com Flask</title>
+</head>
+<body>
+  <h1>Minha IA</h1>
+  
+  <script>
+    // Solicitar permissão de acesso ao microfone
+    navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(function(stream) {
+        // Permissão concedida
+        console.log("Permissão de acesso ao microfone concedida!");
+      })
+      .catch(function(error) {
+        // Permissão negada ou erro
+        console.error("Erro ao acessar o microfone:", error);
+      });
+  </script>
+</body>
+</html>
